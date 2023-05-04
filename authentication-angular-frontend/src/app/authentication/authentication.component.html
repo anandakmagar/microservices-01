@@ -1,0 +1,28 @@
+<p></p>
+<h1 class="text-center">Authentication Application</h1>
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Log In</h3>
+    <form (ngSubmit) = "authenticateUser(username, password)">
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter username"
+            [(ngModel)] = "username" name="username">
+
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="text" class="form-control" id="password" placeholder="Enter password"
+            [(ngModel)] = "password" name="password">
+
+        </div>
+        <p></p>
+        <div class="text-center">
+            <button class="btn btn-success" type="submit">Submit</button>
+        </div>
+        <p></p>
+        <p class="text-center"><b>{{message}}</b></p>
+
+    </form>
+
+</div>
+

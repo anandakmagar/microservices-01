@@ -24,9 +24,9 @@ public class UserServiceImpl implements UserService {
             User user = userRepository.findByUsername(username);
             String password2 = user.getPassword();
             if (password.equals(password2)){
-                return "Hi " + user.getName() + "!. You're successfully logged in.";
+                return "Hello, " + user.getName() + "! You're successfully logged in.";
             }
         }
-        return "Incorrect username/password!!";
+        return "Incorrect username/password!!. Please enter the correct credentials";
     }
 }

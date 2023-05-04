@@ -15,7 +15,7 @@ spring:
             - StripPrefix=1
 
         ## additional services go here
-        
+
 server:
   port: 8086
 
